@@ -20,8 +20,13 @@
   <title>Cinema Penguin: Royal Wedding (1951)</title>
   <link href="cp_base.css" rel="stylesheet" />
   <link href="cp_styles.css" rel="stylesheet" />
-  <!-- Link to styles sheets -->
+
+  <!-- *Link to styles sheets -->
+
   <link rel="stylesheet" href="cp_media.css">
+  <link rel="stylesheet" href="cp_animate.css">
+
+  <!-- * -->
 
 </head>
 
@@ -132,7 +137,11 @@
 
       <!-- * -->
 
-      <p>Click the play button to view this classic dance sequence.</p>
+      <p>Click the play button to view this classic dance sequence. To see the dance as it appeared on the movie set,
+        go to the start of the clip and click &#8635; to rotate and play the video. Click &#9995; to pause the rotation
+        and the playbac</p>
+      <input type="checkbox" id="rotateVideo" />
+      <label for="rotateVideo"></label>
       <video controls poster="cp_photo2.png">
         <source src="cp_dance.mp4" type="video/mp4" />
         <source src="cp_dance.webm" type="video/webm" />
@@ -197,6 +206,13 @@
     Cinema Penguin &copy; 2018 English (US) <span> <a href="#">About</a> <a href="#">Developers</a> <a href="#">Terms</a>
     </span>
   </footer>
+
+  <!-- * Link to javaScript -->
+
+  <script src="cp_spin.js"></script>
+
+  <!-- * -->
+
 </body>
 
 </html>
